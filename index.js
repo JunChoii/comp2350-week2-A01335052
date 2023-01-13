@@ -4,11 +4,12 @@ const http = require('http');
 const port = process.env.PORT || 3000;
 
 const dbConfig = {
-	host: "host",
-	user: "user",
-	password: "password",
-	database: "database",
-	multipleStatements: false
+	host: "sql.freedb.tech",
+	user: "freedb_comp2350_main.",
+	password: "&mqe3?aHcPUCezp",
+	database: "freedb_comp2350-week2-A01335052",
+	multipleStatements: false,
+	reconnection: true
 };
 
 var database = mysql.createPool(dbConfig);
